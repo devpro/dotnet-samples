@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <AssemblyName>DotnetSamples.BlogDomain</AssemblyName>
-    <RootNamespace>DotnetSamples.BlogDomain</RootNamespace>
-    <ProjectGuid>{E9314ACF-4283-420F-AF14-97345BBF79DB}</ProjectGuid>
+    <AssemblyName>DotnetSamples.BlogInfraMongoDb</AssemblyName>
+    <RootNamespace>DotnetSamples.BlogInfraMongoDb</RootNamespace>
+    <ProjectGuid>{F2F2E22E-15CC-430B-802B-5F008D53B628}</ProjectGuid>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>

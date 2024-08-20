@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogDomain", "src\BlogDomain\BlogDomain.csproj", "{20A75B63-E383-4ACC-9B55-0650B13D2BBC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogMongoDbInfra", "src\BlogMongoDbInfra\BlogMongoDbInfra.csproj", "{31B9DD13-FA68-4AC8-93E0-4BB697DCD5A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogInfraMongoDb", "src\BlogInfraMongoDb\BlogInfraMongoDb.csproj", "{31B9DD13-FA68-4AC8-93E0-4BB697DCD5A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
