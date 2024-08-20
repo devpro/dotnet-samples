@@ -2,7 +2,7 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
 
-namespace Dotnet50Samples
+namespace Dotnet50Samples.SourceGeneratorSample
 {
     /// <summary>
     /// Example taken from: https://github.com/dotnet/roslyn-sdk/blob/master/samples/CSharp/SourceGenerators/SourceGeneratorSamples/HelloWorldGenerator.cs
