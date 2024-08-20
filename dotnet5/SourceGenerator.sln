@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSample", "src\SourceGeneratorSample\SourceGeneratorSample.csproj", "{40BB0779-21B7-42D9-8FD8-84F7FB378AA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Solution Items", "0 - Solution Items", "{4BAEC31C-9D01-49D6-A0BC-DC6F5BD9641E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Source Generator", "1 - Source Generator", "{4F0C3369-9748-4B8D-BA94-3C7035371475}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorSampleConsole", "samples\SourceGeneratorSampleConsole\SourceGeneratorSampleConsole.csproj", "{8D70C4AE-796C-479D-A567-A130ED4F4F79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40BB0779-21B7-42D9-8FD8-84F7FB378AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40BB0779-21B7-42D9-8FD8-84F7FB378AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40BB0779-21B7-42D9-8FD8-84F7FB378AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40BB0779-21B7-42D9-8FD8-84F7FB378AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D70C4AE-796C-479D-A567-A130ED4F4F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D70C4AE-796C-479D-A567-A130ED4F4F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D70C4AE-796C-479D-A567-A130ED4F4F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D70C4AE-796C-479D-A567-A130ED4F4F79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40BB0779-21B7-42D9-8FD8-84F7FB378AA2} = {4F0C3369-9748-4B8D-BA94-3C7035371475}
+		{8D70C4AE-796C-479D-A567-A130ED4F4F79} = {4F0C3369-9748-4B8D-BA94-3C7035371475}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DFC314C2-4F57-42F0-B835-1EDD5E9B1163}
+	EndGlobalSection
+EndGlobal
