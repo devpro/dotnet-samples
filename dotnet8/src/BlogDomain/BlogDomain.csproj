@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>DotnetSamples.BlogDomain</AssemblyName>
+    <RootNamespace>DotnetSamples.BlogDomain</RootNamespace>
+    <ProjectGuid>{E9314ACF-4283-420F-AF14-97345BBF79DB}</ProjectGuid>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>

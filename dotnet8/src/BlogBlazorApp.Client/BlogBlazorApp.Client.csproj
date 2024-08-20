@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>DotnetSamples.BlogBlazorApp.Client</AssemblyName>
+    <RootNamespace>DotnetSamples.BlogBlazorApp.Client</RootNamespace>
+    <ProjectGuid>{72233A84-0F61-4C86-9EE6-BB40F0DBDCC8}</ProjectGuid>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>DotnetSamples.BlogMongoDbInfra</AssemblyName>
+    <RootNamespace>DotnetSamples.BlogMongoDbInfra</RootNamespace>
+    <ProjectGuid>{F2F2E22E-15CC-430B-802B-5F008D53B628}</ProjectGuid>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

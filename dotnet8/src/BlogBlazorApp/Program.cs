@@ -1,4 +1,4 @@
-﻿using BlogBlazorApp.Components;
+﻿using DotnetSamples.BlogBlazorApp.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +29,6 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(BlogBlazorApp.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(DotnetSamples.BlogBlazorApp.Client._Imports).Assembly);
 
 app.Run();
