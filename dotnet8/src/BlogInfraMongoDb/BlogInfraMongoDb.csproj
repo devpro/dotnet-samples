@@ -9,4 +9,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MongoDB.EntityFrameworkCore" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogDomain\BlogDomain.csproj" />
+  </ItemGroup>
+
 </Project>
