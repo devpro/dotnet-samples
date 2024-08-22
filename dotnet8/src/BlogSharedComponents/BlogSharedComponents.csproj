@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>DotnetSamples.BlogSharedComponents</AssemblyName>
+    <RootNamespace>DotnetSamples.BlogSharedComponents</RootNamespace>
+    <ProjectGuid>{99B35D5A-E26D-4FDC-9972-3ED0BEE001BF}</ProjectGuid>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogDomain\BlogDomain.csproj" />
+  </ItemGroup>
+
+</Project>

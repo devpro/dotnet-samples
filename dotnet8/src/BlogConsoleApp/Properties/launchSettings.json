@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BlogConsoleApp": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

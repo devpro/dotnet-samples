@@ -1,11 +1,15 @@
 ﻿using DotnetSamples.BlogBlazorApp.Components;
+using DotnetSamples.BlogBlazorApp.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+builder.Services
+    .AddMapping()
+    .AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
@@ -29,6 +33,7 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(DotnetSamples.BlogBlazorApp.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(DotnetSamples.BlogBlazorApp.Client._Imports).Assembly,
+        typeof(DotnetSamples.BlogSharedComponents.Pages.Home).Assembly);
 
 app.Run();

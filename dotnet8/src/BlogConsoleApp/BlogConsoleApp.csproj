@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>DotnetSamples.BlogConsoleApp</AssemblyName>
+    <RootNamespace>DotnetSamples.BlogConsoleApp</RootNamespace>
+    <ProjectGuid>{E425D25E-B93A-4A0E-B11C-4BAFA0173977}</ProjectGuid>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogInfraMongoDb\BlogInfraMongoDb.csproj" />
+  </ItemGroup>
+
+</Project>

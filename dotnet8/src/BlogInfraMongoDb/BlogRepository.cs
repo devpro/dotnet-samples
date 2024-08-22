@@ -15,13 +15,15 @@ public class BlogRepository(BlogDbContext blogDbContext, IMapper mapper) : IBlog
 
     public async Task<List<CategoryModel>> GetCategoriesAsync()
     {
-        return _mapper.Map<List<CategoryModel>>(await _blogDbContext.Categories.ToListAsync());
+        var entities = await _blogDbContext.Categories.ToListAsync();
+        return _mapper.Map<List<CategoryModel>>(entities);
     }
 
     public async Task<CategoryModel?> GetCategoryAsync(string id)
     {
         var objectId = ParseObjectId(id);
-        return _mapper.Map<CategoryModel?>(await _blogDbContext.Categories.FirstOrDefaultAsync(x => x.Id == objectId));
+        var entity = await _blogDbContext.Categories.FirstOrDefaultAsync(x => x.Id == objectId);
+        return _mapper.Map<CategoryModel?>(entity);
     }
 
     public async Task<CategoryModel?> SaveCategoryAsync(CategoryModel item)
@@ -36,7 +38,6 @@ public class BlogRepository(BlogDbContext blogDbContext, IMapper mapper) : IBlog
         {
             var existing = await _blogDbContext.Categories.FirstOrDefaultAsync(x => x.Id == entity.Id)
                 ?? throw new Exception("Blog category cannot be updated as it doesn't exist");
-
             existing.Name = entity.Name;
         }
 

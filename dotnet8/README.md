@@ -21,6 +21,9 @@ dotnet build
 Run the samples:
 
 ```bash
+# runs a local MongoDB in a container
+docker run --name mongodb6 -d -p 27017:27017 mongo:6.0
+
 # runs blog Blazor application (click on the link to open the website in your browser)
 dotnet run --project src/BlogBlazorApp
 ```

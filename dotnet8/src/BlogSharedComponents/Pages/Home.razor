@@ -1,0 +1,23 @@
+﻿@page "/"
+
+@using BlogDomain.Models
+@using BlogDomain.Repositories
+@inject IBlogRepository repository
+
+<h2>Categories</h2>
+
+<ul>
+@foreach (var c in categories) {
+    <li>@c.Name</li>
+}
+</ul>
+
+@code {
+    protected List<CategoryModel> categories = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await repository.GetCategoriesAsync();
+        await base.OnInitializedAsync();
+    }
+}

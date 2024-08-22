@@ -2,7 +2,7 @@
 
 namespace DotnetSamples.BlogInfraMongoDb.Mapping;
 
-internal class BlogMappingProfile : Profile
+public class BlogMappingProfile : Profile
 {
     public override string ProfileName
     {

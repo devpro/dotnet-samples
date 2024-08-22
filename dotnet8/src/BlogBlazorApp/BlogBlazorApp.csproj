@@ -11,6 +11,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BlogBlazorApp.Client\BlogBlazorApp.Client.csproj" />
+    <ProjectReference Include="..\BlogDomain\BlogDomain.csproj" />
+    <ProjectReference Include="..\BlogInfraMongoDb\BlogInfraMongoDb.csproj" />
+    <ProjectReference Include="..\BlogSharedComponents\BlogSharedComponents.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.8" />
   </ItemGroup>
 
